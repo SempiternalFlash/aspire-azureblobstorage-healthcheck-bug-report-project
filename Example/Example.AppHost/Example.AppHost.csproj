@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.1" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>87de6d91-3a81-4cd6-98c5-c5d241eb7fd1</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Azure.Storage.Blobs" Version="9.5.0-preview.1.25425.9" />
+    <PackageReference Include="Aspire.Hosting" Version="9.5.0-preview.1.25425.9" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.5.0-preview.1.25425.9" />
+    <PackageReference Include="Aspire.Hosting.Azure" Version="9.5.0-preview.1.25425.9" />
+    <PackageReference Include="Aspire.Hosting.Azure.Storage" Version="9.5.0-preview.1.25425.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Example.ApiService\Example.ApiService.csproj" />
+  </ItemGroup>
+
+</Project>
